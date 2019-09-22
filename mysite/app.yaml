@@ -1,0 +1,15 @@
+# app engine configuration
+
+runtime: python37
+
+handlers:
+- url: /static
+  static_dir: static/
+- url: /.*
+  script: auto
+
+env_variables:
+  #production env 
+  #DJANGO_SETTINGS_MODULE: mysite.settings.production
+  #dev env
+  DJANGO_SETTINGS_MODULE: mysite.settings.dev

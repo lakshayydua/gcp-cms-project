@@ -20,9 +20,9 @@ DEBUG = True
 SECRET_KEY = 'an insecure secret'
 
 # SECURITY WARNING: define the correct hosts in production!
-#ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['*']
 # app engine gives up following host by default
-ALLOWED_HOSTS = ['my-wagtail-project.appspot.com','127.0.0.1'] 
+#ALLOWED_HOSTS = ['my-wagtail-project.appspot.com','127.0.0.1'] 
 
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
